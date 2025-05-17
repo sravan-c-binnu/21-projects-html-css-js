@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Casie's Kitchen</h1>
+    <p class="text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique ab quo sint perferendis rerum exercitationem assumenda quisquam omnis magni, voluptatibus modi impedit rem molestias, optio et iure placeat fuga est!</p>
+    <div class="orderclass"><button class="orderbutton" type="submit">Order</button></div>
+<script>
+    const button = document.querySelector('.orderbutton');
+    const paragraph = document.querySelector('.text');
+
+    button.onclick = function(){
+        paragraph.textContent ="Thank you for the order";
+    };
+</script>
+</body>
+</html>

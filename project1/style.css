@@ -1,0 +1,15 @@
+p {
+    border: 2px solid skyblue;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: bisque;
+    padding: 10px;
+}
+
+.orderclass {
+    padding: 10px;
+    border-radius: 5px;
+    font-style: normal;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}
