@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1 {
+            background-color: bisque;
+            padding: 10px;
+            color: blue;
+        }
+
+        .orderBox {
+            display: flex;
+            justify-content: center;
+        }
+
+        .orderButton {
+            background-color: blue;
+            color: white;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Momo shop</h1>
+    <div class="orderBox">
+        <button class="orderButton" type="submit">Menu</button>
+    </div>
+
+    <script>
+        const checkout = document.querySelector('.orderButton');
+
+        checkout.onclick = function(){
+            checkout.textContent = 'Order';
+        };
+    </script>
+</body>
+</html>
