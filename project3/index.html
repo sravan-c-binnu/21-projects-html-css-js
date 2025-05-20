@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Toggle Image Project</title>
+  <style>
+    /* Container for the button */
+    .container {
+      padding: 40px;
+      margin: 10px;
+      height: 40px;
+      border-radius: 20px;
+      display: flex;
+      justify-content: center;
+    }
+
+    /* Button styling */
+    .smiley {
+      background-color: rgb(195, 229, 149);
+      border: 1px solid burlywood;
+      cursor: pointer;
+    }
+
+    /* Optional: Add margin to the image */
+    img {
+      margin: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Heading -->
+  <h1>Smiley Image</h1>
+
+  <!-- Image to toggle -->
+  <img class="sad" src="images/sad.png" alt="sad face" height="200">
+
+  <!-- Button that changes the image -->
+  <div class="container">
+    <button class="smiley" type="button">Click me</button>
+  </div>
+
+  <!-- JavaScript logic -->
+  <script>
+    // STEP 1: Get the button element from the page
+    const button = document.querySelector('.smiley');
+
+    // STEP 2: Get the image element
+    const sadSmiley = document.querySelector('.sad');
+
+    // STEP 3: Define the file paths (as strings)
+    const sadSrc = "images/sad.png";     // Sad image path
+    const happySrc = "images/happy.png"; // Happy image path
+
+    // STEP 4: Add a click event to the button
+    button.onclick = function() {
+      // STEP 5: Check if the current image is the sad one
+      if (sadSmiley.src.includes("sad.png")) {
+        // If it is sad, change it to happy
+        sadSmiley.src = happySrc;
+        sadSmiley.alt = "happy face";
+      } else {
+        // If it is happy, change it back to sad
+        sadSmiley.src = sadSrc;
+        sadSmiley.alt = "sad face";
+      }
+    };
+  </script>
+
+</body>
+</html>

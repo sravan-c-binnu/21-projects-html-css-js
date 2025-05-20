@@ -1,18 +1,8 @@
-# Project 2 – Button Text Change
+# 21 Projects in HTML, CSS, and JavaScript
 
-This project demonstrates how to:
+A journey through 21 beginner web development projects to master front-end basics.
 
-- Use a `<button>` element.
-- Change button text using JavaScript.
-- Style the page with internal CSS.
+## ✅ Projects Completed
 
-## Features
-
-- A heading titled "Momo shop".
-- A button labeled "Menu" that changes to "Order" when clicked.
-
-## Technologies Used
-
-- HTML
-- CSS (internal)
-- JavaScript (DOM manipulation)
+- [01 – Heading, Paragraph, and Button](./project1)
+- [02 – Button Text Change](./project2)
